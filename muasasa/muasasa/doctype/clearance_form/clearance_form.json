@@ -1,0 +1,620 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-10-09 14:14:21.246823",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "information_section",
+  "naming_series",
+  "employee",
+  "id_number",
+  "employee_name",
+  "designation",
+  "date_of_joining",
+  "column_break_9zi831",
+  "last_day",
+  "nationality",
+  "department",
+  "actual_start_date",
+  "column_break_rxzxv",
+  "clearance_reason",
+  "employment_type",
+  "branch",
+  "contract_start_date",
+  "employee_mangement_section",
+  "name_employee_mangement_section",
+  "reason_mangement_section",
+  "column_break_qolcx",
+  "date_mangement_section",
+  "column_break_k9vq9",
+  "clearance_employee_mangement_section",
+  "warehouses_section",
+  "warehouses_name",
+  "warehouses_reason",
+  "column_break_ip3rp",
+  "warehouses_date",
+  "column_break_cicql",
+  "warehouses_clearance",
+  "customer_accountant_section",
+  "customer_accountant_name",
+  "customer_accountant_reason",
+  "column_break_mptmf",
+  "customer_accountant_date",
+  "column_break_tl7ai",
+  "customer_accountant_clearance",
+  "movement_department_section",
+  "movement_department_name",
+  "movement_department_reason",
+  "column_break_b2wyu",
+  "movement_department_date",
+  "column_break_ksuna",
+  "movement_department_clearance",
+  "itdep_section",
+  "name_itdep",
+  "clearance_itdep",
+  "reason_itdep",
+  "column_break_cb4rs",
+  "date_itdep",
+  "it_component",
+  "finance_section",
+  "finance_name",
+  "clearance_finance",
+  "reason_finance",
+  "column_break_jfjil",
+  "finance_date",
+  "finance_component",
+  "hr_section",
+  "hr_name",
+  "hr_reason",
+  "column_break_2lmyv",
+  "hr_date",
+  "column_break_t5bit",
+  "hr_clearance",
+  "operation_manager_section",
+  "operation_manager_name",
+  "operation_manager_reason",
+  "column_break_rrkhv",
+  "operation_manager_date",
+  "column_break_b8yoh",
+  "operation_manager_clearance",
+  "top_management_section",
+  "top_management_name",
+  "top_management_reason",
+  "column_break_x4rwc",
+  "top_management_date",
+  "column_break_uhhug",
+  "top_management_clearance",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "information_section",
+   "fieldtype": "Section Break",
+   "label": "Information"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CF_"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9zi831",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_day",
+   "fieldtype": "Date",
+   "label": "Last Day Of Work"
+  },
+  {
+   "fetch_from": "employee.nationality",
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.final_confirmation_date",
+   "fieldname": "actual_start_date",
+   "fieldtype": "Date",
+   "label": "Actual Start Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rxzxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clearance_reason",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Clearance Reason",
+   "options": "\n\u0625\u062c\u0627\u0632\u0629 \u0633\u0646\u0648\u064a\u0629\n\u0627\u0633\u062a\u0642\u0627\u0644\u0629\n\u0627\u0646\u0647\u0627\u0621 \u062e\u062f\u0645\u0627\u062a\n\u0646\u0647\u0627\u064a\u0629 \u0639\u0642\u062f\n\u0625\u0646\u0647\u0627\u0621 \u0639\u0642\u062f \u0628\u0627\u062a\u0641\u0627\u0642 \u0627\u0644\u0637\u0631\u0641\u064a\u0646",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employment_type",
+   "fieldtype": "Link",
+   "label": "Employment Type",
+   "options": "Employment Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.contract_start_date",
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "label": "Contract Start Date",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fetch_from": "employee.employee_managment_approver",
+   "fieldname": "employee_mangement_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Mangement"
+  },
+  {
+   "fetch_from": "employee.employee_managment_approver",
+   "fetch_if_empty": 1,
+   "fieldname": "name_employee_mangement_section",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "reason_mangement_section",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_qolcx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_mangement_section",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_k9vq9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "clearance_employee_mangement_section",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "warehouses_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouses"
+  },
+  {
+   "fieldname": "warehouses_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "warehouses_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_ip3rp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "warehouses_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_cicql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "warehouses_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "customer_accountant_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Accountant"
+  },
+  {
+   "fieldname": "customer_accountant_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_accountant_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_mptmf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "customer_accountant_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_tl7ai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_accountant_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "movement_department_section",
+   "fieldtype": "Section Break",
+   "label": "Movement Department"
+  },
+  {
+   "fieldname": "movement_department_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "movement_department_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_b2wyu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "movement_department_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_ksuna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "movement_department_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "itdep_section",
+   "fieldtype": "Section Break",
+   "label": "IT Department"
+  },
+  {
+   "fieldname": "name_itdep",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_itdep",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "reason_itdep",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_cb4rs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_itdep",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "it_component",
+   "fieldtype": "Table",
+   "options": "IT Component"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "finance_section",
+   "fieldtype": "Section Break",
+   "label": "Finance"
+  },
+  {
+   "fieldname": "finance_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clearance_finance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "reason_finance",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_jfjil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "finance_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "finance_component",
+   "fieldtype": "Table",
+   "options": "Finance Component"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "hr_section",
+   "fieldtype": "Section Break",
+   "label": "H.R"
+  },
+  {
+   "fieldname": "hr_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hr_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_2lmyv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "hr_date",
+   "fieldtype": "Date",
+   "label": "hr_date"
+  },
+  {
+   "fieldname": "column_break_t5bit",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "operation_manager_section",
+   "fieldtype": "Section Break",
+   "label": "Operation Manager"
+  },
+  {
+   "fetch_from": "employee.operation_managment_approver",
+   "fieldname": "operation_manager_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operation_manager_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_rrkhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "operation_manager_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_b8yoh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_manager_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "top_management_section",
+   "fieldtype": "Section Break",
+   "label": "Top Management"
+  },
+  {
+   "fieldname": "top_management_name",
+   "fieldtype": "Link",
+   "label": "Name",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "top_management_reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "column_break_x4rwc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "top_management_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_uhhug",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "top_management_clearance",
+   "fieldtype": "Select",
+   "label": "Clearance",
+   "options": "No\nYes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Clearance Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Clearance Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.id_number",
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "label": "ID Number"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Final Settlement",
+   "link_fieldname": "clearance_form"
+  }
+ ],
+ "modified": "2024-05-03 18:53:23.150563",
+ "modified_by": "Administrator",
+ "module": "Muasasa",
+ "name": "Clearance Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

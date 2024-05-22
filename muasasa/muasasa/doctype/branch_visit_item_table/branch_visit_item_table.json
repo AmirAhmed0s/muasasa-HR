@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-04 16:51:36.573657",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "item_name",
+  "shelf",
+  "warehouse",
+  "notes",
+  "column_break_ot0ar",
+  "exs",
+  "exw",
+  "image_before",
+  "image_after"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "shelf",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Shelf"
+  },
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Warehouse"
+  },
+  {
+   "fieldname": "image_before",
+   "fieldtype": "Attach Image",
+   "label": "Image Before"
+  },
+  {
+   "fieldname": "image_after",
+   "fieldtype": "Attach Image",
+   "label": "Image After"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_ot0ar",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "exs",
+   "fieldtype": "Date",
+   "label": "EXs"
+  },
+  {
+   "fieldname": "exw",
+   "fieldtype": "Date",
+   "label": "EXw"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-09 13:27:33.150057",
+ "modified_by": "Administrator",
+ "module": "Muasasa",
+ "name": "Branch Visit Item Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

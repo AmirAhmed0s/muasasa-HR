@@ -1,0 +1,184 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-09-04 16:51:38.820672",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "customer",
+  "customer_branch",
+  "action",
+  "latitude",
+  "longitude",
+  "submit_date",
+  "create_date",
+  "column_break_5mndt",
+  "user",
+  "user_name",
+  "current_latitude",
+  "current_longitude",
+  "create_time",
+  "section_break_znjp9",
+  "items_detail",
+  "section_break_uykeg",
+  "notes",
+  "column_break_dsi4n",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "BV-"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_branch",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Customer Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "submit_date",
+   "fieldtype": "Date",
+   "label": "Submit Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5mndt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "user.full_name",
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_latitude",
+   "fieldtype": "Data",
+   "label": "Current Latitude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_longitude",
+   "fieldtype": "Data",
+   "label": "Current Longitude",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "create_date",
+   "fieldtype": "Date",
+   "label": "Create Date",
+   "read_only": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "create_time",
+   "fieldtype": "Time",
+   "label": "Create Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_znjp9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items_detail",
+   "fieldtype": "Table",
+   "label": "Items Detail",
+   "options": "Branch Visit Item Table",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_uykeg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_dsi4n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Branch Visit",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Customer Latitude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Customer Longitude",
+   "read_only": 1
+  },
+  {
+   "fieldname": "action",
+   "fieldtype": "Data",
+   "label": "Action"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-10-19 13:36:15.238228",
+ "modified_by": "Administrator",
+ "module": "Muasasa",
+ "name": "Branch Visit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

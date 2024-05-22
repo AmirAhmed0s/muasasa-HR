@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include muasasa *.css
+recursive-include muasasa *.csv
+recursive-include muasasa *.html
+recursive-include muasasa *.ico
+recursive-include muasasa *.js
+recursive-include muasasa *.json
+recursive-include muasasa *.md
+recursive-include muasasa *.png
+recursive-include muasasa *.py
+recursive-include muasasa *.svg
+recursive-include muasasa *.txt
+recursive-exclude muasasa *.pyc

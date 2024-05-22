@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-09 14:35:02.239750",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "top_manager",
+  "movement_manager",
+  "customer_accountant",
+  "column_break_fwqz7",
+  "hr_manager",
+  "finance_manager",
+  "column_break_qnfvy",
+  "it_manager",
+  "warehouses_manager"
+ ],
+ "fields": [
+  {
+   "fieldname": "top_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Top Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "movement_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Movement Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_accountant",
+   "fieldtype": "Link",
+   "label": "Customer Accountant",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_fwqz7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hr_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "H.R Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "finance_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Finance Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_qnfvy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "it_manager",
+   "fieldtype": "Link",
+   "label": "IT Manager",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "warehouses_manager",
+   "fieldtype": "Link",
+   "label": "warehouses Manager",
+   "options": "User",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-10-09 14:35:02.239750",
+ "modified_by": "Administrator",
+ "module": "Muasasa",
+ "name": "Department managers",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

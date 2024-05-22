@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "creation": "2023-09-04 16:55:51.868366",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_branch"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_branch",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Branch",
+   "options": "Customer Branch"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-04 16:55:51.868366",
+ "modified_by": "Administrator",
+ "module": "Muasasa",
+ "name": "Customer Branch List",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
